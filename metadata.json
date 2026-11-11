@@ -1,0 +1,6 @@
+{
+  "name": "Kashmir Haven",
+  "description": "Luxury bespoke editorial Kashmir expeditions, heritage houseboats, alpine sanctuaries, and Himalayan journeys.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
