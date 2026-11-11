@@ -11,6 +11,7 @@ import CtaSection from './components/CtaSection';
 import Footer from './components/Footer';
 import InquiryModal from './components/InquiryModal';
 import ImageLightboxModal from './components/ImageLightboxModal';
+import FloatingContactButtons from './components/FloatingContactButtons';
 
 interface VideoItem {
   id: string;
@@ -42,10 +43,10 @@ const VIDEOS: VideoItem[] = [
 ];
 
 const STATS = [
-  '60+ Deep Sessions',
-  '12,000+ Creators',
-  '4.8 User Satisfaction',
-  'Intentional-First Design',
+  'Curated Kashmir Experiences',
+  'Local Travel Expertise',
+  '4.8 Guest Satisfaction',
+  'Tailor-Made Journeys',
 ];
 
 export default function App() {
@@ -226,20 +227,19 @@ export default function App() {
               id="hero-badge"
               className="liquid-glass rounded-full px-3.5 py-1.5 mb-3 sm:mb-5 font-sans-ui text-[0.7rem] sm:text-xs md:text-sm tracking-wide text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)] max-w-[92%]"
             >
-              Over 10,000 minds already finding their clarity
+              A JOURNEY THROUGH THE HEART OF THE HIMALAYAS
             </div>
 
             {/* Heading with smooth Newsreader transition */}
             <h1
               id="hero-heading"
-              className={`font-serif text-[2.1rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.2rem] leading-[1.1] max-w-4xl tracking-tight text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)] transition-all duration-700 ease-out ${
+              className={`font-serif text-[2.1rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.2rem] leading-[1.1] max-w-4xl tracking-tight text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)] transition-all duration-700 ease-out [text-wrap:balance] ${
                 isNewsreaderLoaded
                   ? 'opacity-100 blur-0 translate-y-0'
                   : 'opacity-90 blur-[0.6px] translate-y-0.5'
               }`}
             >
-              Clarity in an <br className="hidden min-[380px]:inline" />
-              Endlessly Noisy Universe
+              Somewhere between the mountains and the sky, there's Kashmir.
             </h1>
 
             {/* Subtext */}
@@ -247,8 +247,7 @@ export default function App() {
               id="hero-subtext"
               className="font-sans-ui text-xs sm:text-sm md:text-base max-w-sm sm:max-w-md md:max-w-xl leading-relaxed mt-3 sm:mt-4 mb-5 sm:mb-8 px-2 text-white/90 drop-shadow-[0_1px_6px_rgba(0,0,0,0.6)]"
             >
-              Rise above the chaos of pings, infinite scrolling, and relentless demands.
-              Discover how to protect your presence and create with intention.
+              Discover quiet valleys, winding mountain roads and extraordinary landscapes through thoughtfully crafted journeys across Kashmir.
             </p>
 
             {/* Video Switcher with Responsive Flexible Grid Layout */}
@@ -293,7 +292,7 @@ export default function App() {
             <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-x-4 sm:gap-x-6 gap-y-1.5 drop-shadow-[0_1px_4px_rgba(0,0,0,0.6)] text-center max-w-lg sm:max-w-none mx-auto">
               {STATS.map((stat, i) => (
                 <div key={stat} className="flex items-center justify-center gap-2 sm:gap-4">
-                  <span className="whitespace-nowrap">{stat}</span>
+                  <span className="whitespace-normal sm:whitespace-nowrap">{stat}</span>
                   {i < STATS.length - 1 && (
                     <span className="hidden sm:inline-block text-white/40 select-none">·</span>
                   )}
@@ -346,6 +345,9 @@ export default function App() {
 
       {/* 9. Editorial Footer */}
       <Footer />
+
+      {/* 10. Floating WhatsApp and Phone Contact Buttons */}
+      <FloatingContactButtons />
 
       {/* ================================================== */}
       {/* MODALS & OVERLAYS                                  */}

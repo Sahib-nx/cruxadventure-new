@@ -1,0 +1,25 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circular Luxury Forest Green Tile -->
+  <rect width="100" height="100" rx="22" fill="#18231C"/>
+  <rect width="98" height="98" x="1" y="1" rx="21" stroke="#C5A059" stroke-width="1.5" stroke-opacity="0.4"/>
+  <defs>
+    <linearGradient id="favGold" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#FCEFD0" />
+      <stop offset="50%" stop-color="#E9C176" />
+      <stop offset="100%" stop-color="#A88235" />
+    </linearGradient>
+  </defs>
+  <!-- Ground Line -->
+  <line x1="18" y1="80" x2="82" y2="80" stroke="url(#favGold)" stroke-width="3" stroke-linecap="round" />
+  <!-- Outer Mountain Triangle -->
+  <polyline points="18,80 50,22 82,80" stroke="url(#favGold)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+  <!-- Central Summit -->
+  <polyline points="36,60 50,34 64,60" stroke="url(#favGold)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+  <!-- Arête Ridge (The Crux) -->
+  <path d="M 50,34 Q 47,49 51,63 Q 53,71 48,80" stroke="url(#favGold)" stroke-width="2.5" stroke-linecap="round" />
+  <!-- Ridges & Facets -->
+  <polyline points="25,72 36,60 48,51" stroke="url(#favGold)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+  <polyline points="75,72 64,60 52,64" stroke="url(#favGold)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+  <!-- Intertwined 'C' Monogram Arc -->
+  <path d="M 64,36 C 64,24 54,19 44,21 C 30,25 21,37 21,53 C 21,69 30,80 46,80 C 57,80 65,72 64,63 C 63,58 58,56 55,59 C 51,63 47,66 42,66 C 33,66 28,58 28,49 C 28,39 34,29 45,26 C 51,25 56,28 58,35 Z" fill="url(#favGold)" />
+</svg>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
+import BrandLogo from './BrandLogo';
 
 interface NavbarProps {
   onOpenInquiry: () => void;
@@ -30,14 +31,15 @@ export default function Navbar({ onOpenInquiry }: NavbarProps) {
     <>
       {/* Liquid-Glass Navigation Header */}
       <header className="w-full flex items-center justify-between" id="cruxadventure-navbar">
-        {/* Logo (Instrument Serif, italic) */}
+        {/* Logo (Custom Himalayan 'C' Monogram & Wordmark) */}
         <div className="flex items-center">
           <a
             href="#hero"
             id="cruxadventure-brand-logo"
-            className="text-white italic text-xl sm:text-2xl md:text-3xl font-serif tracking-normal cursor-pointer hover:opacity-90 transition-opacity whitespace-nowrap drop-shadow-[0_1px_8px_rgba(0,0,0,0.4)]"
+            className="group flex items-center cursor-pointer hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-[#C5A059] rounded-lg"
+            aria-label="Crux Adventure - Return to top"
           >
-            cruxadventure
+            <BrandLogo colorMode="gold" />
           </a>
         </div>
 
@@ -125,9 +127,7 @@ export default function Navbar({ onOpenInquiry }: NavbarProps) {
       >
         {/* Top bar inside mobile drawer */}
         <div className="flex items-center justify-between w-full pb-3 border-b border-white/10">
-          <span className="text-white italic text-base sm:text-lg font-serif drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]">
-            cruxadventure
-          </span>
+          <BrandLogo colorMode="gold" showSubtitle={false} className="scale-90 origin-left" />
           <button
             id="mobile-overlay-close-btn"
             type="button"
